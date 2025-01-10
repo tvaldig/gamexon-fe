@@ -1,0 +1,94 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #1B0167;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigation Links */
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF8A00;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .active {
+    color: #FF8A00;
+    font-weight: bold;
+  }
+  
+  .active::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: #FF8A00; /* Active pointer color */
+    border-radius: 2px;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    background-color: #FF8A00;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .logout-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+  
+  .logo {
+    filter: invert(1);
+  }
+  

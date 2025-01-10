@@ -1,0 +1,117 @@
+h1{
+    color: white;
+}
+
+h1 {
+    color: white;
+  }
+  
+  .search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    padding: 5px;
+    border-color: #FF8A00;
+    border-radius: 5px;
+  }
+  
+  .search-button {
+    padding: 5px 15px;
+    background-color: #FF8A00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .game-table-container {
+    margin: 20px 0;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+p {
+    color: white;
+}
+  .page-buttons button {
+    margin: 2px 2px;
+    margin-top: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  
+  .page-buttons button.active {
+    font-weight: bold;
+    color: black;
+    background-color: #FF8A00;
+  }
+  
+  .selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .selected-game-info {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .continue-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FF8A00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .selected-text{
+    color:white;
+  }
+  .similar-title{
+    font-size: 16px;
+    text-align: left;
+  }
+  .game-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+  }
+  .bottom-divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .game-table th,
+  .game-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .similiar-games {
+    color: white;
+  }
+  
+  .game-table td:nth-child(3),
+  .game-table th:nth-child(3) {
+    max-width: 300px;
+  }
